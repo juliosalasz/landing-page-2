@@ -1,0 +1,722 @@
+body {
+  position: relative;
+
+  font-family: "Inter", sans-serif;
+}
+/* navigation*/
+#nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 99;
+}
+.navClass {
+  padding: 40px 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li:hover {
+  text-decoration: underline;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: 800;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Banner*/
+#heroBanner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(185, 10, 228);
+  background: linear-gradient(
+    0deg,
+    rgba(185, 10, 228, 1) 0%,
+    rgba(0, 89, 223, 1) 100%
+  );
+  color: white;
+}
+.heroLogo {
+  position: relative;
+}
+.marco {
+  border: 10px solid white;
+  width: 790px;
+  height: 288px;
+  border-radius: 12px;
+}
+.catImage {
+  width: 425px;
+  height: 425px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+}
+.catImage img {
+  width: 100%;
+}
+.nombre {
+  position: absolute;
+  top: 50px;
+  left: 270px;
+}
+.nombre h2 {
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 76px;
+}
+.nombre h3 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+/* About me*/
+
+#aboutMe {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 30px;
+  height: 80vh;
+}
+.aboutMe-container {
+  position: relative;
+  width: 70%;
+}
+
+.aboutMe-content {
+  position: absolute;
+  top: -80px;
+
+  overflow: hidden;
+  display: flex;
+  border-radius: 12px;
+  background-color: #fffdf5;
+}
+
+.aboutMe-content-img {
+  width: 40%;
+  background-image: url("/assets/IMG_0191.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutMe-content-img img {
+  width: 100%;
+}
+.aboutMe-content-text {
+  width: 60%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aboutMe-content-text h2 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.aboutMe-content-text p {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+/*Skill*/
+
+#skills {
+  background: rgb(10, 150, 228);
+  background: linear-gradient(
+    0deg,
+    rgba(10, 150, 228, 1) 0%,
+    rgba(0, 89, 223, 1) 100%
+  );
+  width: 100%;
+  padding: 110px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-content {
+  color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.skill-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-underline {
+  border-bottom: 5px solid white;
+  padding-bottom: 8px;
+}
+.skill-title h2 {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.skill-list-ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 27px 22px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.skill-list-ul li {
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*proyectos*/
+
+#proyectos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.proyectos-title {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale__container--js {
+  width: 100%;
+  text-align: center;
+}
+.scale--js {
+  font-weight: 800;
+  display: inline-block;
+  transform-origin: 50% 0;
+  -webkit-font-smoothing: antialiased;
+  transform: translate3d(0, 0, 0);
+}
+
+.proyectos-contenido {
+  background: rgb(255, 251, 154);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 251, 154, 1) 0%,
+    rgba(255, 148, 148, 1) 100%
+  );
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto-grande {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.proyecto-grande-item {
+  width: 90%;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.proyecto-grande-item-img {
+  width: 100%;
+}
+.proyecto-grande-item-img img {
+  width: 100%;
+}
+
+.proyecto-grande-item-text {
+  padding: 40px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.proyecto-grande-item-text h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.proyecto-grande-item-text h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.proyecto-grande-item-text p {
+  font-size: 20px;
+  color: #303030;
+}
+
+.linkbutton {
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: black;
+  padding: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.linkbutton:hover {
+  text-decoration: underline;
+}
+
+.proyecto-pequeño {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-bottom: 150px;
+}
+
+.proyecto-pequeño-item {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.proyecto-pequeli-item-img img {
+  width: 100%;
+}
+
+.proyecto-pequeli-item-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+}
+
+.proyecto-pequeli-item-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.proyecto-pequeli-item-text h3 {
+  font-size: 25px;
+}
+
+/*Contactame*/
+
+#contacto {
+  background-color: black;
+  color: white;
+}
+.contactame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  gap: 40px;
+}
+
+.encuentrame h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.linkMarco {
+  border: 7px solid white;
+  padding: 100px;
+}
+
+.link a {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* from 320px*/
+
+@media screen and (max-width: 320px) {
+  /* Banner */
+
+  #heroBanner {
+    height: 80vh;
+  }
+
+  .heroLogo {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .marco {
+    display: none;
+  }
+
+  .catImage {
+    width: 250px;
+    height: 250px;
+    position: unset;
+    top: -70px;
+    left: -150px;
+  }
+  .nombre {
+    position: unset;
+  }
+
+  .nombre h2 {
+    font-size: 45px;
+    line-height: 39px;
+  }
+  .nombre h3 {
+    font-size: 20px;
+  }
+
+  /*Proyectos*/
+}
+
+@media screen and (max-width: 425px) {
+  #heroBanner {
+    height: 80vh;
+  }
+
+  .heroLogo {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .marco {
+    display: none;
+  }
+
+  .catImage {
+    width: 250px;
+    height: 250px;
+    position: unset;
+    top: -70px;
+    left: -150px;
+  }
+  .nombre {
+    position: unset;
+  }
+
+  .nombre h2 {
+    font-size: 45px;
+    line-height: 39px;
+  }
+  .nombre h3 {
+    font-size: 20px;
+  }
+
+  /* Skills */
+  .skill-list-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*about Me*/
+
+  #aboutMe {
+    height: 120vh;
+  }
+  .aboutMe-container {
+    width: 95%;
+  }
+  .aboutMe-content {
+    position: inherit;
+    flex-direction: column;
+  }
+
+  .aboutMe-content-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .aboutMe-content-text {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .aboutMe-content-text h2 {
+    font-size: 57px;
+    text-align: center;
+    line-height: 59px;
+  }
+
+  .aboutMe-content-text p {
+    font-size: 15px;
+    line-height: 35px;
+    text-align: left;
+  }
+  /* Proyecto */
+
+  .proyecto-grande {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .proyecto-grande-item-text {
+    padding: 20px;
+  }
+
+  .proyecto-grande-item-text h2 {
+    font-size: 30px;
+  }
+
+  .proyecto-grande-item-text h3 {
+    font-size: 21px;
+  }
+
+  .proyecto-grande-item-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .proyecto-pequeño {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-bottom: 150px;
+  }
+
+  .proyecto-pequeli-item-img img {
+    width: 100%;
+  }
+
+  .proyecto-pequeli-item-text h2 {
+    font-size: 30px;
+  }
+
+  .proyecto-pequeli-item-text h3 {
+    font-size: 21px;
+  }
+
+  .proyecto-pequeli-item-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /*Footer*/
+
+  .encuentrame h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .linkMarco {
+    padding: 30px;
+  }
+
+  .link a {
+    font-size: 18px;
+  }
+}
+
+/* tablets desktops*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*nav*/
+  .navClass {
+    padding: 40px 70px;
+  }
+  /*hero banner*/
+
+  #heroBanner {
+    height: 70vh;
+  }
+  .marco {
+    border: 7px solid white;
+    width: 510px;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .catImage {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -30px;
+    left: -60px;
+  }
+
+  .nombre {
+    top: 30px;
+    left: 140px;
+  }
+
+  .nombre h2 {
+    font-size: 66px;
+    line-height: 56px;
+  }
+
+  .nombre h3 {
+    font-size: 30px;
+  }
+
+  /* about me*/
+  .aboutMe-container {
+    width: 90%;
+  }
+
+  .aboutMe-content-text h2 {
+    font-size: 67px;
+  }
+
+  .aboutMe-content-text p {
+    font-size: 21px;
+    line-height: 40px;
+  }
+
+  .aboutMe-content-text {
+    gap: 20px;
+  }
+  /*Skill*/
+  .skill-list-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 27px 22px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+
+  .skill-list-ul li {
+    font-size: 25px;
+  }
+  /*Proyectos*/
+  .proyecto-pequeño {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-bottom: 150px;
+  }
+  .proyecto-pequeli-item-img img {
+    width: 100%;
+  }
+
+  .proyecto-pequeli-item-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .proyecto-pequeli-item-text h3 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /*Hero Banner*/
+  .marco {
+    border: 8px solid white;
+    width: 660px;
+    height: 258px;
+  }
+  .catImage {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: -80px;
+  }
+
+  .nombre {
+    top: 32px;
+    left: 170px;
+  }
+
+  .nombre h2 {
+    font-size: 86px;
+  }
+  /* Acerca de mi*/
+  .aboutMe-content-text p {
+    text-align: left;
+  }
+  /*Proyecto*/
+}
+
+@media (min-width: 1920px) {
+  .aboutMe-container {
+    position: relative;
+    width: 50%;
+  }
+
+  .aboutMe-content-text h2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
