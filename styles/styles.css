@@ -60,6 +60,8 @@ body {
 }
 .heroLogo {
   position: relative;
+  opacity: 0;
+  left: -250px;
 }
 .marco {
   border: 10px solid white;
@@ -107,6 +109,7 @@ body {
 .aboutMe-container {
   position: relative;
   width: 70%;
+  opacity: 0;
 }
 
 .aboutMe-content {
@@ -190,10 +193,13 @@ body {
 }
 
 .skill-list {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 70px;
+  opacity: 0;
+  top: 100px;
 }
 
 .skill-list-ul {

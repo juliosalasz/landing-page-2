@@ -142,3 +142,36 @@ $(document).ready(function () {
     );
   });
 });
+
+//Aperaring animation
+
+$(document).ready(function () {
+  $(".heroLogo").animate(
+    {
+      left: "0px",
+      opacity: "1",
+    },
+    "slow"
+  );
+  $(".aboutMe-container").animate(
+    {
+      opacity: "1",
+    },
+    "slow"
+  );
+
+  $(window).on("scroll", function () {
+    if (
+      $(window).scrollTop() + $(window).height() - 100 >=
+      $("#skills").offset().top
+    ) {
+      $(".skill-list ").animate(
+        {
+          opacity: "1",
+          top: "0px",
+        },
+        "slow"
+      );
+    }
+  });
+});
