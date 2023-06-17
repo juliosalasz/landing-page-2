@@ -63,10 +63,16 @@ $(document).ready(function () {
     var w = $(window).width();
     if (w > 425) {
       $("#nav").removeAttr("style");
+      $("#navMobile").css("display", "none");
     } else {
       $("#nav").css("display", "none");
+      $("#navMobile").removeAttr("style");
     }
   });
+});
+
+$(".btnSlider").on("click", function () {
+  $(".menu").toggleClass("show");
 });
 
 //Section Links
